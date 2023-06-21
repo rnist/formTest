@@ -144,14 +144,12 @@ return false
 	function str_pad_left(string, pad, length) {
   return (new Array(length + 1).join(pad) + string).slice(-length);
 }
-
-const finalTime = str_pad_left(minutes, '0', 2) + ':' + str_pad_left(seconds, '0', 2);
 	
 	const minutes = Math.floor(totalTime / 60);
 	let seconds = totalTime - minutes * 60;
 
-const finalTime = str_pad_left(minutes, '0', 2) + ':' + str_pad_left(seconds, '0', 2);
-	alert(`formular completat in ${finalTime} , dupa ok dati refresh`);
+const formatTime = str_pad_left(minutes, '0', 2) + ':' + str_pad_left(seconds, '0', 2);
+	alert(`formular completat in ${formatTime} , dupa ok dati refresh`);
 	return false;
 }
 
