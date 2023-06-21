@@ -137,7 +137,10 @@ alert(why);
 	    e.preventDefault();
 return false;
 }
-	alert('formular completat in ' + totalTime);
+	const minutes = Math.floor(time / 60);
+	const seconds = time - minutes * 60;
+
+	alert('formular completat in ${minutes}:${seconds}');
 }
 
 var a = Math.ceil(Math.random() * 9)+ '';
