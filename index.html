@@ -142,8 +142,12 @@ return false
 
 } else {
 	const minutes = Math.floor(totalTime / 60);
-	const seconds = totalTime - minutes * 60;
-	alert(`formular completat in ${minutes}:${seconds} , dupa ok dati refresh`);
+	let seconds = totalTime - minutes * 60;
+	const firstZero = null;
+	if(seconds < 10) {
+		firstZero = 0
+	}
+	alert(`formular completat in ${minutes}:${firstZero}${seconds} , dupa ok dati refresh`);
 	return false;
 }
 
