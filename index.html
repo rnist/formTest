@@ -137,12 +137,13 @@ why += "- The CAPTCHA Code Does Not Match.\n";
 if(why != ""){
 alert(why);
 	   
-return false;
+
 }
 	const minutes = Math.floor(time / 60);
 	const seconds = time - minutes * 60;
 
 	alert(`formular completat in ${minutes}:${seconds} , dupa ok dati refresh`);
+	return false;
 }
 
 var a = Math.ceil(Math.random() * 9)+ '';
