@@ -135,13 +135,13 @@ why += "- The CAPTCHA Code Does Not Match.\n";
 }
 }
 if(why != ""){
-alert(why);
+alert(why);		 theform.preventDefault();
 	   
 
 } else {
 	const minutes = Math.floor(time / 60);
 	const seconds = time - minutes * 60;
-
+		 theform.preventDefault();
 	alert(`formular completat in ${minutes}:${seconds} , dupa ok dati refresh`);
 }
 		 theform.preventDefault();
