@@ -112,8 +112,11 @@ Type the number:<br>
 </form>
 <script type="text/javascript">
 
+	let totalTime = 0;
+
 	function myOnloadFunc() {
 		console.log('loaded, starting timer');
+		setInterval(function () {totalTime = totalTime + 1}, 1000);
 	}
 
 // Captcha Script
@@ -134,7 +137,7 @@ alert(why);
 	    e.preventDefault();
 return false;
 }
-	alert('formular completat in');
+	alert('formular completat in ' + totalTime);
 }
 
 var a = Math.ceil(Math.random() * 9)+ '';
