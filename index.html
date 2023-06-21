@@ -143,7 +143,7 @@ return false
 } else {
 	const minutes = Math.floor(totalTime / 60);
 	let seconds = totalTime - minutes * 60;
-	const firstZero = null;
+	let firstZero = null;
 	if(seconds < 10) {
 		firstZero = 0
 	}
